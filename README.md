@@ -23,6 +23,7 @@
 | name           | string | null: false   |
 | info           | text   | null: false   |
 | date-day       | date   | null: false   |
+| user           | references | null: false  , foreign_key: true  |
 
 
 ### Association
@@ -36,6 +37,8 @@
 |---------------|-----------|--------------|
 | text          | text      | null: false  |
 | date-day      | date      | null: false  |
+| user          | references | null: false , foreign_key: true |
+| event         | references | null: false , foreign_key: true |
 
 ### Association
 
